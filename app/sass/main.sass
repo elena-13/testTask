@@ -1,0 +1,168 @@
+@import "bourbon"
+@import "vars"
+@import "libs"
+
+.header
+    display: flex
+    justify-content: space-between
+    background-color: $ancillary-bg
+    padding-top: 56px
+    padding-bottom: 20px
+    padding-right: 50px
+    padding-left: 50px
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .24)
+    &__buttons
+        display: flex
+
+
+
+
+.button
+    display: block
+    margin: 0
+    padding: 0
+    text-align: center
+    cursor: pointer
+    position: relative
+    overflow: hidden
+    outline: 0
+    transition: background-color .3s
+    &_tab-right
+        margin-right: 10px
+    &_tab-left 
+        margin-left: 10px  
+    &_sm 
+        border: 1px solid rgba(220, 220, 220, 1)
+        border-radius: 3px
+        color: $font-dark 
+        background-color: transparent
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .24) inset
+    &_lg 
+        color: $font-light  
+        border-radius: 1px
+        background-color: $accent
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .6), 0 2px 4px rgba(0, 0, 0, .6)
+    &:hover 
+        background-color: $spotlight
+        color: $font-dark
+    &_lg &__text 
+        padding: 5px 10px
+        display: block
+    &_sm &__text 
+        padding: 0 10px
+        display: block  
+
+.search
+    display: inline-flex
+    &__button
+        width: 25px 
+        height: 25px 
+        background: center  no-repeat
+        background-size: auto
+        background-image: url(/img/search.svg)
+        cursor: pointer
+        &_tab
+            margin-right: 10px
+    &__input  
+        width: 190px
+        height: 19px  
+        margin: 0
+        outline: 0
+        padding-left: 10px
+        border: 1px solid rgba(220, 220, 220, 1)
+        border-radius: 2px
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .24) inset
+        transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1)
+        text-overflow: ellipsis
+        &:focus 
+            border-color: darken($font-gray, 5%)
+
+.main
+    display: block   
+.time-line
+    display: flex
+    justify-content: flex-start
+    flex: 1  
+    position: relative
+    padding: 20px 50px
+.nav
+    display: flex
+    font-size: 18px
+    &__swith 
+        display: flex
+        border: 1px solid rgba(220, 220, 220, 1)
+        border-radius: 3px
+        cursor: pointer
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .24) inset
+        transition: all .3s
+        &:hover 
+            border-color: darken($font-gray, 5%)
+            box-shadow: 0 2px 1px rgba(0, 0, 0, .6), 0 2px 3px rgba(0, 0, 0, .6)
+        i
+            font: normal normal normal 14px/1 FontAwesome
+            padding: 0 7px
+    &__text 
+        padding: 0 5px  
+        width: 140px
+        text-align: center
+
+.table 
+    padding-right: 50px
+    padding-left: 50px 
+    padding-bottom: 50px 
+    max-width: 1024px
+    margin: 0 auto  
+    &__row
+        display: flex
+        width: 100%
+        background-color: $main-bg
+    &__item
+        width: calc(100%/7)
+        border: 1px solid $ancillary-bg
+        &_spotligh
+            background-color: $spotlight
+            color: $font-dark
+            &_title
+                font-weight: 700
+                font-size: 12px
+                color: $font-dark
+            &_text 
+                color: $font-dark 
+        &_header    
+            background-color: $ancillary-bg  
+            &_text 
+                color: $font-dark!important
+    &__wrapper
+        overflow: hidden
+        position: relative
+        width: 100%
+        padding-bottom: 100%
+    &__text 
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        color: $font-gray
+        padding-top: 5%
+        padding-left: 5%
+.rating 
+    text-align: right
+    padding-right: 10%
+    unicode-bidi: bidi-override
+    direction: rtl
+    color: $font-gray
+.rating > span 
+    display: inline-block
+    position: relative
+    width: 16px 
+    cursor: pointer
+
+        
+     
+        
+      
+
+
+
+@import "media"

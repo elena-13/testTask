@@ -1,0 +1,51 @@
+@import "bourbon"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: $font-gray
+	opacity: 1
+
+*:-moz-placeholder
+	color: $font-gray
+	opacity: 1
+
+*::-moz-placeholder
+	color: $font-gray
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: $font-gray
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+button::-moz-focus-inner,
+input::-moz-focus-inner 
+	border: 0
+	padding: 0
+h1,h2,h3,h4,h5,h6 
+	margin: 0
+	padding: 0
+button 
+	background: none
+	border: 0
+	color: inherit
+	font: inherit
+	line-height: normal
+	padding: 0
+	-webkit-appearance: button
+
+body
+	font-size: 12px
+	min-width: 320px
+	margin: 0
+	padding: 0
+	position: relative
+	line-height: 1.6
+	font-family: $default-font
+	overflow-x: hidden

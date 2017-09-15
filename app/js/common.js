@@ -176,3 +176,4 @@ $(function() {
 
 	FillDatesOnPage(GetDays(activeMonth));	
 });
+
